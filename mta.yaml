@@ -2,3 +2,19 @@ ID: SALES_PROJECT02
 _schema-version: '2.0'
 description: SALES PROJECT02
 version: 0.0.1
+
+modules:
+ - name: HDB02
+   type: hdb
+   path: HDB02
+   requires:
+    - name: hdi_HDB02
+
+resources:
+ - name: hdi_HDB02
+   parameters:
+      config:
+         schema: HDB02
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
