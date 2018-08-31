@@ -1,0 +1,6 @@
+namespace SALES_PROJECT02.HDB02;
+
+@OData.publish : true
+/*@@layout{"layoutInfo":{"x":-342,"y":-185.5}}*/
+context cdsTable01 {
+};
